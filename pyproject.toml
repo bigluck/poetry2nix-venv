@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "my-python-nix-test"
+version = "0.0.1"
+description = "Test"
+authors = ["BigLuck"]
+readme = "README.md"
+packages = [{include = "my_python_nix_test"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+requests = "^2.31.0"
+
+[tool.poetry.scripts]
+my-python-nix-test = "my_python_nix_test.a:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
